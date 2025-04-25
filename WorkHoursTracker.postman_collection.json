@@ -1,0 +1,142 @@
+{
+  "info": {
+    "name": "WorkHoursTracker API",
+    "description": "Collection for testing the WorkHoursTracker API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Start Work",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"razvan\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5173/api/work/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5173",
+          "path": [
+            "api",
+            "work",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stop Work",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"razvan\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5173/api/work/stop",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5173",
+          "path": [
+            "api",
+            "work",
+            "stop"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Today's Summary",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5173/api/work/today?username=razvan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5173",
+          "path": [
+            "api",
+            "work",
+            "today"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "razvan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Weekly Summary",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5173/api/work/week?username=razvan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5173",
+          "path": [
+            "api",
+            "work",
+            "week"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "razvan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Logs",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5173/api/work/logs?username=razvan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5173",
+          "path": [
+            "api",
+            "work",
+            "logs"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "razvan"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

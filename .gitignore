@@ -8,4 +8,3 @@ obj/
 .env
 *.db
 *.sqlite
-*.postman_collection.json
