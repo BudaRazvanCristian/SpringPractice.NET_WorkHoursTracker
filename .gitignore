@@ -1,0 +1,11 @@
+bin/
+obj/
+*.user
+*.suo
+*.log
+.vscode/
+.idea/
+.env
+*.db
+*.sqlite
+*.postman_collection.json
